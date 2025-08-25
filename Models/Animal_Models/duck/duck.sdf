@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version="1.4">
-  <model name="model">
-    <pose>0 0 0.1 0 0 0</pose>
+  <model name="duck_">
+    <pose>0 0 0.5 0 0 0</pose>
     <static>true</static>
     <link name="link">
       <inertial>
-        <mass>0.2</mass>
-        <inertia>
-          <ixx>0.01</ixx>
+        <mass>0.2</mass> <!-- Adjusted mass for a typical rubber duck -->
+        <inertia> <!-- Approximate inertia for a duck; adjust as needed -->
+          <ixx>0.01</ixx> <!-- These are placeholders; compute for accuracy -->
           <ixy>0.0</ixy>
           <ixz>0.0</ixz>
           <iyy>0.01</iyy>
@@ -18,24 +18,18 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://model/meshes/model.dae</uri>
-            <scale>0.1 0.1 0.1</scale>
+            <uri>model://duck/meshes/duck_.stl</uri>
+            <scale>0.25 0.25 0.25</scale> <!-- Adjust scale if needed -->
           </mesh>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://model/meshes/model.dae</uri>
-            <scale>0.1 0.1 0.1</scale>
+            <uri>model://duck/meshes/duck_.stl</uri>
+            <scale>0.25 0.25 0.25</scale> <!-- Adjust scale if needed -->
           </mesh>
         </geometry>
-        <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Yellow</name>
-          </script>
-        </material>
       </visual>
     </link>
   </model>
