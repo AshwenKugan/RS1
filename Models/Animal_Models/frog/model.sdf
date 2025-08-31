@@ -1,25 +1,25 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <model name="bearv1">
+  <model name="Frogv1">
     <static>true</static>
-    <link name="bear_link">
+    <link name="frog_link">
 
       <!-- Visual representation -->
-      <visual name="bear_visual">
+      <visual name="frog_visual">
         <geometry>
           <mesh>
-            <uri>model://bear/meshes/bearv1/bearv1.obj</uri>
-            <scale>1 1 1</scale>
+            <uri>model://frog/meshes/Frog/Frogv1.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
           </mesh>
         </geometry>
       </visual>
 
       <!-- Collision geometry -->
-      <collision name="bear_collision">
+      <collision name="frog_collision">
         <geometry>
           <mesh>
-            <uri>model://bear/meshes/bearv1/bearv1.obj</uri>
-            <scale>1 1 1</scale>
+            <uri>model://frog/meshes/Frog/Frogv1.obj</uri>
+            <scale>0.01 0.01 0.01</scale>
           </mesh>
         </geometry>
       </collision>

@@ -1,7 +1,8 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
 # File Created: 06.05.2013 11:55:24
 
-mtllib 20436_Frog_v1 textured.mtl
+mtllib Frogv1.mtl
+
 
 #
 # object 20436_Frog_v1

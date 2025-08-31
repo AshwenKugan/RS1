@@ -12,7 +12,7 @@ newmtl 14090__Hear__No__Evil__Monkey_v2
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0900 0.0900 0.0900
 	Ke 0.0000 0.0000 0.0000
-	map_Ka 14090_ Hear_ No_ Evil_ Monkey_v2_diff.jpg
-	map_Kd 14090_ Hear_ No_ Evil_ Monkey_v2_diff.jpg
-	map_Ks 14090_ Hear_ No_ Evil_ Monkey_v2_spec.JPG
-	map_bump 14090__Hear__No__Evil__Monkey_v2_Normal Bump.tga
+	map_Ka monkeyv1_diff.jpg
+	map_Kd monkeyv1_diff.jpg
+	# map_Ks 14090_ Hear_ No_ Evil_ Monkey_v2_spec.JPG
+	# map_bump 14090__Hear__No__Evil__Monkey_v2_Normal Bump.tga
