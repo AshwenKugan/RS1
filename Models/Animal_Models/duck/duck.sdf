@@ -1,36 +1,25 @@
-<?xml version='1.0'?>
-<sdf version="1.4">
-  <model name="model">
-    <pose>0 0 0.5 0 0 0</pose>
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="duck">
     <static>true</static>
-    <link name="link">
-      <inertial>
-        <mass>0.2</mass> <!-- Adjusted mass for a typical rubber duck -->
-        <inertia> <!-- Approximate inertia for a duck; adjust as needed -->
-          <ixx>0.01</ixx> <!-- These are placeholders; compute for accuracy -->
-          <ixy>0.0</ixy>
-          <ixz>0.0</ixz>
-          <iyy>0.01</iyy>
-          <iyz>0.0</iyz>
-          <izz>0.01</izz>
-        </inertia>
-      </inertial>
-      <collision name="collision">
+    <link name="duck_link">
+      <visual name="duck_visual">
         <geometry>
           <mesh>
-            <uri>model://duck/meshes/model.dae</uri>
-            <scale>0.25 0.25 0.25</scale> <!-- Adjust scale if needed -->
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://duck/meshes/model.dae</uri>
-            <scale>0.25 0.25 0.25</scale> <!-- Adjust scale if needed -->
+            <uri>model://RS1/Models/Animal_Models/duck/meshes/duck.stl</uri>
+
+            <scale>0.01 0.01 0.01</scale>
           </mesh>
         </geometry>
       </visual>
+      <collision name="duck_collision">
+        <geometry>
+          <mesh>
+            <uri>model://RS1/Models/Animal_Models/duck/meshes/duck.stl</uri>
+            <scale>0.01 0.01 0.01</scale>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
   </model>
 </sdf>
